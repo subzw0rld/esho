@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/cropped-Favicon-2-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/cropped-Favicon-2-192x192.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon"
+      href="/cropped-Favicon-2-180x180.png"
+      sizes="32x32"
+    />
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esho - Esho Stays - Serviced Accommodation - Airbnb</title>
+  </head>
+  <body class="bg-gray-50">
+    <main>
+      <header class="p-1.5 bg-[#28bdbf] flex  text-white text-xs shadow-gray-600 shadow-sm relative z-50">
+        <div class="logo-container">
+          <a href="/">
+            <img src="./logo.jpg" alt="Esho Stays logo" width="100" />
+          </a>
+        </div>
+        <nav class="grow">
+          <ul class="flex">
+            <li class="p-3">
+              <a href="/">Home</a>
+            </li>
+            <li class="p-3">
+              <a href="/about">About</a>
+            </li>
+            <li class="p-3">
+              <a href="/services">Services</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="right-section flex items-center text-white">
+          <section class="email p-1">
+            <a href="mailto:info@eshostays.com" class="flex items-center">
+              <img class="rounded-full bg-white p-1" src="./icons/envelope.svg" alt="email icon" width="20">
+              <span class="ml-2">info@eshostays.com</span>
+            </a>
+          </section>
+
+          <section class="phone p-1">
+            <a href="tel:01452903703" class="flex items-center">
+              <img class="rounded-full bg-white p-1" src="./icons/phone.svg" alt="email icon" width="20">
+              <span class="ml-2">01452 903703</span>
+            </a>
+          </section>
+
+          <section class="book p-1 flex items-center">
+            <button class="bg-[#F15B61] p-1 border-1 rounded-sm border-white cursor-pointer">
+              Book Now
+            </button>
+          </section>
+        </div>
+      </header>
+      <section class="banner relative lg:pt-[44%] pt-[100%]">
+        <picture>
+          <source
+            media="(max-width:1023px)"
+            srcset="/banner/homepage-hero-mobile.jpeg"
+          />
+          <image
+            class="absolute w-full h-full left-0 top-0"
+            src="/banner/homepage-hero-desktop.jpeg"
+          />
+        </picture>
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 flex flex-col bg-[#36b4a6] rounded-2xl p-3.5 shadow-white shadow-xl backdrop-blur-xs text-white">
+          <h1 class="relative text-2xl">Your Stay, Your Place!</h1>
+          <button class="bg-[#F15B61] p-1 border-1 rounded-sm border-white cursor-pointer mt-2.5">
+            Book Now
+          </button>
+        </div>
+      </section>
+      <section class="promo-strip bg-[#28bdbf] p-1.5 flex justify-center">
+        <div class="icon-container flex flex-col items-center p-3">
+          <img
+            class="rounded-full bg-white p-1"
+            src="./icons/home.svg"
+            alt=""
+            width="30"
+          />
+          <div>
+            <span class="text-xs">Great Locations!</span>
+          </div>
+        </div>
+
+        <div class="icon-container flex flex-col items-center p-3">
+          <img
+            class="rounded-full bg-white p-1"
+            src="./icons/trash.svg"
+            alt=""
+            width="30"
+          />
+          <div>
+            <span class="text-xs block">In-house amenities</span>
+            <span class="text-xs block">House Keeping</span>
+          </div>
+        </div>
+
+        <div class="icon-container flex flex-col items-center p-3">
+          <img
+            class="rounded-full bg-white p-1"
+            src="./icons/users.svg"
+            alt=""
+            width="30"
+          />
+          <div>
+            <span class="text-xs">Perfect for Families!</span>
+          </div>
+        </div>
+      </section>
+      <section class="content p-10 text-justify">
+        <p>
+          Welcome to Esho Stays, where your comfort is our priority. At Esho
+          Stays, we believe in creating spaces that are uniquely yours,
+          providing you with a home away from home. Our serviced accommodations
+          are designed with your needs in mind, offering you the perfect blend
+          of convenience and luxury. Whether you’re traveling for business,
+          leisure or family fun time, Esho Stays ensures that every moment of
+          your stay is tailored to your preferences. Experience unparalleled
+          hospitality and discover why we say,
+          <strong>“Esho Stays: Your Stay, Your Space."</strong>
+        </p>
+      </section>
+      <footer class="bg-[#28bdbf] flex  text-white text-xs p-1.5">
+        <div class="logo-container">
+          <a href="/">
+            <img src="./logo.jpg" alt="Esho Stays logo" width="100" />
+          </a>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
