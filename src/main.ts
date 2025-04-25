@@ -1,4 +1,5 @@
 import './style.css';
 
 const date = new Date();
-document.querySelector('.date-container').innerHTML = date.getFullYear();
+const dateContainer = document.querySelector('.date-container') as HTMLElement;
+dateContainer.innerHTML = date.getFullYear().toString();
