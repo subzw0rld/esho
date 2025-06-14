@@ -1,4 +1,33 @@
 @import "tailwindcss";
+:root {
+  --body-grid-row-config: 112px 1fr 112px;
+  --about-grid-row-config: 112px 320px 1fr 112px;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.1;
+}
+
+body {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -29,11 +58,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 #app {
