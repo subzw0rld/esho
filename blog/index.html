@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/cropped-Favicon-2-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/cropped-Favicon-2-192x192.png" sizes="192x192" />
+    <link
+      rel="apple-touch-icon"
+      href="/cropped-Favicon-2-180x180.png"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esho Stays - Blog</title>
+  </head>
+  <body class="bg-gray-50">
+    <main class="grid grid-rows-(--faq-grid-row-config) h-[100dvh]">
+      <header
+        class="p-1.5 bg-[#28bdbf] flex text-white text-xs shadow-gray-600 shadow-sm relative z-50 items-center"
+      >
+        <div class="logo-container">
+          <a href="/">
+            <img src="/badge-01.png" alt="Esho Stays logo" width="100" />
+          </a>
+        </div>
+        <nav class="grow">
+          <ul class="flex">
+            <li class="p-3">
+              <a href="/">Home</a>
+            </li>
+            <li class="p-3">
+              <a href="/about/">About</a>
+            </li>
+            <li class="p-3">
+              <a href="/services">Services</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="right-section flex items-center text-white">
+          <section class="email p-1">
+            <a href="mailto:info@eshostays.com" class="flex items-center">
+              <img
+                class="rounded-full bg-white p-1"
+                src="/icons/envelope.svg"
+                alt="email icon"
+                width="20"
+              />
+              <span class="ml-2">info@eshostays.com</span>
+            </a>
+          </section>
+
+          <section class="phone p-1">
+            <a href="tel:01452903703" class="flex items-center">
+              <img
+                class="rounded-full bg-white p-1"
+                src="/icons/phone.svg"
+                alt="email icon"
+                width="20"
+              />
+              <span class="ml-2">01452 903703</span>
+            </a>
+          </section>
+
+          <section class="book p-1 flex items-center">
+            <button
+              class="bg-[#F15B61] p-1 border-1 rounded-sm border-white cursor-pointer"
+            >
+              Book Now
+            </button>
+          </section>
+        </div>
+      </header>
+      <ul
+        class="breadcrumb flex items-center pl-1.5 text-sm bg-neutral-900 text-white"
+      >
+        <li><a href="/">Home</a></li>
+        <li class="ml-1">/ Blog</li>
+      </ul>
+      <div
+        class="faq-banner bg-neutral-900 text-white flex flex-col items-center justify-center"
+      >
+        <h1>Welcome to the Esho Stays Blog!</h1>
+        <h2 class="mt-2.5">
+          Looking for travel inspiration or tips to make the most of your stay?
+        </h2>
+        <h2>You’re in the right place!</h2>
+      </div>
+      <section class="content p-10 text-justify text-sm">
+        <div class="blog-area">
+          <div class="blog-content pt-5 pb-5">
+            <p>
+              Our blog is packed with local guides, insider insights, and smart
+              accommodation advice–whether you’re visiting the Cotswolds,
+              Gloucester, or beyond.
+            </p>
+            <p class="mt-2.5">
+              We also share resources for landlords looking to get more from
+              their property with less stress.
+            </p>
+            <p class="mt-2.5">
+              Whether you’re planning your next getaway or exploring hands-free
+              letting, we’ve got you covered!
+            </p>
+          </div>
+          <h3 class="text-center">
+            Grab a coffee, have a scroll, and make yourself at home!
+          </h3>
+
+          <table class="w-full table-auto border-collapse">
+            <tbody>
+              <tr>
+                <td class="border-b">Article 1</td>
+                <td class="border-b">Article 2</td>
+                <td class="border-b">Article 3</td>
+              </tr>
+              <tr>
+                <td class="border-b">Article 4</td>
+                <td class="border-b">Article 5</td>
+                <td class="border-b">Article 6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <footer class="bg-[#28bdbf] flex text-white text-xs p-1.5">
+        <div class="logo-container flex items-center w-1/4">
+          <a href="/">
+            <img src="/badge-01.png" alt="Esho Stays logo" width="100" />
+          </a>
+          <span class="ml-3.5"
+            >&copy; <span class="date-container"></span> EshoStays- All rights
+            reserved.</span
+          >
+        </div>
+        <div class="static-links flex items-center pl-2">
+          <ul>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/partner-with-us">Partner with Us</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

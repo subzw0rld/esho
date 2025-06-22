@@ -1,7 +1,8 @@
 @import "tailwindcss";
 :root {
   --body-grid-row-config: 112px 1fr 112px;
-  --about-grid-row-config: 112px 320px 1fr 112px;
+  --about-grid-row-config: 112px 40px 384px 1fr 112px;
+  --faq-grid-row-config: 112px 40px 384px 1fr 112px;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
