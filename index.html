@@ -11,188 +11,271 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esho - Esho Stays - Serviced Accommodation - Airbnb</title>
   </head>
-  <body class="bg-gray-50">
-    <main class="grid grid-rows-(--body-grid-row-config) h-[100dvh]">
-      <header
-        class="p-1.5 bg-[#28bdbf] flex text-white text-xs shadow-gray-600 shadow-sm relative z-50 items-center"
-      >
+  <body>
+    <main class="home">
+      <header class="esho-header grid-container-col">
+        <section class="esho-header-items">
         <div class="logo-container">
           <a href="/">
-            <img src="/badge-01.png" alt="Esho Stays logo" width="100" />
+            <img src="/badge-01.png" alt="Esho Stays logo" width="100" class="logo-img" />
           </a>
         </div>
         <nav class="grow">
-          <ul class="flex">
-            <li class="p-3 border-b-4">
+          <ul class="header-menu-list">
+            <li class="active">
               <a href="/">Home</a>
             </li>
-            <li class="p-3">
+            <li>
               <a href="/about/">About</a>
             </li>
-            <li class="p-3">
+            <li>
               <a href="/services">Services</a>
             </li>
           </ul>
         </nav>
-        <div class="right-section flex items-center text-white">
-          <section class="email p-1">
-            <a href="mailto:info@eshostays.com" class="flex items-center">
+        <div class="header-right-section">
+          <section>
+            <a href="mailto:info@eshostays.com" class="email">
               <img
                 class="rounded-full bg-white p-1"
                 src="./icons/envelope.svg"
                 alt="email icon"
                 width="20"
+                height="20"
               />
-              <span class="ml-2">info@eshostays.com</span>
+              <span>info@eshostays.com</span>
             </a>
           </section>
 
-          <section class="phone p-1">
-            <a href="tel:01452903703" class="flex items-center">
+          <section>
+            <a href="tel:01452903703" class="phone">
               <img
                 class="rounded-full bg-white p-1"
                 src="./icons/phone.svg"
                 alt="email icon"
                 width="20"
+                height="20"
               />
               <span class="ml-2">01452 903703</span>
             </a>
           </section>
 
           <section class="book p-1 flex items-center">
-            <button
-              class="bg-[#F15B61] p-1 border-1 rounded-sm border-white cursor-pointer"
-            >
+            <button class="btn-primary p-1 border-1 rounded-sm border-white cursor-pointer">
               Book Now
             </button>
           </section>
         </div>
+        </section>
       </header>
-      <section class="banner relative lg:pt-[44%] pt-[100%]">
-        <picture>
+      <section class="homepage-banner grid-container-col">
+        <picture class="homepage-banner-picture">
           <source
             media="(max-width:1023px)"
             srcset="/banner/homepage-hero-mobile.jpeg"
           />
           <image
-            class="absolute w-full h-full left-0 top-0"
-            src="/banner/homepage-hero-desktop.jpeg"
-          />
+            class="homepage-banner-image"
+            src="/banner/homepage-hero-desktop.webp"/>
         </picture>
-        <div
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 flex flex-col bg-[#36b4a6] rounded-2xl p-3.5 shadow-white shadow-xl backdrop-blur-xs text-white"
-        >
-          <h1 class="relative text-2xl">Your Stay, Your Place!</h1>
-          <button
-            class="bg-[#F15B61] p-1 border-1 rounded-sm border-white cursor-pointer mt-2.5"
-          >
-            Book Now
-          </button>
+        <div class="banner-widget">
+          <h1>Your Stay, Your Place!</h1>
+        </div>
+        <div class="booking-widget">
+          <form class="flex">
+            <div class="flex check-in-out">
+              <label for="checkInDate">Check-In</label>
+              <input type="date" name="checkInDate" placeholder="Check-In Date">
+              <label for="checkOutDate">Check-Out</label>
+              <input type="date" name="checkOutDate">
+            </div>
+            <div>
+              <select name="guestCount" class="guest-count">
+                <option value="Guests">Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="location">
+              <select name="loc">
+                <option value="locations">Locations</option>
+                <option value="UK">United Kingdom</option>
+              </select>
+              <input type="submit" value="Book Now" class="btn-primary">
+            </div>
+          </form>
         </div>
       </section>
-      <section class="promo-strip bg-[#28bdbf] p-1.5 flex justify-center">
-        <div class="icon-container flex flex-col items-center p-3">
-          <img
-            class="rounded-full bg-white p-0.5"
-            src="./icons/hotel.svg"
-            alt=""
-            width="30"
-          />
-          <div>
-            <span class="text-xs">Great Locations!</span>
+      <div class="alternate-block">
+        <h2>Feel at home, wherever you are, with Esho Stays!</h2>
+        <section class="homepage-content grid-container-col">
+          <div class="homepage-content-slot-even flex">
+            <div>
+              <p>
+                At Esho Stays, we believe that where you stay should feel like it was made just for you. 
+                Whether you’re on a work trip, a weekend escape, or spending extended time in a new city, your space should feel warm, welcoming, and completely yours.
+              </p>
+              <!-- <div class="flex book-now-container">
+                <button class="btn-primary">Book Now</button>
+              </div> -->
+            </div>
+            <div>
+              <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="300" height="200">
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="homepage-content grid-container-col">
+          <div class="homepage-content-slot-odd flex">
+            <div>
+              <p>
+                At Esho Stays, we create spaces that go beyond beds and bathrooms. Our short-term accommodations in <strong>Gloucester</strong>, the <strong>Cotswolds</strong>, and the <strong>Midlands</strong>
+                are designed to offer the freedom of a private home with the ease and service of a boutique hotel.
+              </p>
+            </div>
+            <div>
+              <img src="/homepage/IMG_0144.jpg" alt="" srcset="" width="300" height="200">
+            </div>
+          </div>
+        </section>
+        <section class="homepage-content grid-container-col">
+          <div class="homepage-content-slot-even flex">
+            <div>
+              <p>
+                Whether it’s a peaceful one-bed tucked away in the city, a character-filled townhouse, or a five-bedroom family space with room for everyone (including the dog), you’ll find a stay that fits around you!
 
-        <div class="icon-container flex flex-col items-center p-3">
-          <img
-            class="rounded-full bg-white p-1"
-            src="./icons/concierge-bell.svg"
-            alt=""
-            width="30"
-          />
-          <div>
-            <span class="text-xs block">In-house amenities</span>
-            <span class="text-xs block">House Keeping</span>
+              </p>
+            </div>
+            <div>
+              <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="300" height="200">
+            </div>
           </div>
-        </div>
-
-        <div class="icon-container flex flex-col items-center p-3">
-          <img
-            class="rounded-full bg-white p-1"
-            src="./icons/users.svg"
-            alt=""
-            width="30"
-          />
+        </section>
+      </div>
+      <section class="homepage-content grid-container-col feature-section-container">
+        <div class="featured-content flex">
+          <h2>We host solo professionals, working teams, relocating families, and leisure travellers–all looking for something more than a typical rental.</h2>
           <div>
-            <span class="text-xs">Perfect for Families!</span>
+            <img src="/homepage/Renaissance.jpg" alt="" srcset="" width="600" height="400">
           </div>
         </div>
       </section>
-      <section class="content p-10 text-justify text-sm">
-        <p class="columns-2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-        <p class="mt-2.5 columns-2">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32. The standard chunk of Lorem Ipsum used since the
-          1500s is reproduced below for those interested. Sections 1.10.32 and
-          1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-          reproduced in their exact original form, accompanied by English
-          versions from the 1914 translation by H. Rackham.
-        </p>
-        <p class="mt-2.5 columns-2">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
-        </p>
-        <p class="mt-2.5 columns-2">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
-        </p>
+      <section class="homepage-content grid-container-col">
+        <div class="carousel-container flex-col">
+          <h2>Check out our properties</h2>
+          <div class="carousel swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/homepage/carousel-slide-1.jpg" alt="" srcset="" width="406" height="271">
+                <div class="carousel-description">
+                  <h3>Property 1</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/homepage/carousel-slide-2.jpg" alt="" srcset="" width="406" height="271">
+                <div class="carousel-description">
+                  <h3>Property 2</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/homepage/carousel-slide-3.jpg" alt="" srcset="" width="406" height="271">
+                <div class="carousel-description">
+                  <h3>Property 3</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/homepage/carousel-slide-1.jpg" alt="" srcset="" width="406" height="271">
+                <div class="carousel-description">
+                  <h3>Property 4</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/homepage/carousel-slide-2.jpg" alt="" srcset="" width="406" height="271">
+                <div class="carousel-description">
+                  <h3>Property 5</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/homepage/carousel-slide-3.jpg" alt="" srcset="" width="406" height="271">
+                <div class="carousel-description">
+                  <h3>Property 6</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+        </div>
       </section>
-      <footer class="bg-[#28bdbf] flex text-white text-xs p-1.5">
-        <div class="logo-container flex items-center w-1/4">
+      <section class="homepage-content grid-container-col feature-section-container vertical-center">
+        <div class="featured-content flex flex-wrap horizontal-center">
+          <h2 class="why-book-heading">Why book with Esho Stays ?</h2>
+          <div class="primary-widget">
+            <div>
+              <h5>Hotel Standards, Homely Feel</h5>
+              <p>
+                Expect crisp linens, sparkling clean spaces, and interiors that are as functional as they are beautiful. Everything’s ready for your arrival… You just bring yourself!
+              </p>
+            </div>
+          </div>
+          <div class="primary-widget">
+            <div>
+              <h5>Simple, Direct Bookings</h5>
+              <p>
+                No portals and no surprises. Book directly with us and enjoy fair pricing, clear communication, and real people at the other end of your message.
+              </p>
+            </div>
+          </div>
+          <div class="primary-widget">
+            <div>
+              <h5>Great Locations</h5>
+              <p>
+                From charming Cotswold market towns to vibrant city streets in Gloucester and Coventry, our homes are perfectly placed for convenience and character.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="three-e">
+        <div>
+          <h2>The three E’s</h2>
+          <h3>3 principles we stand for</h3>
+        </div>
+        <div class="three-e-container flex horizontal-center">
+          <div class="primary-widget">
+            <div>
+              <h5>Experience</h5>
+              <p>
+                With over 20 years in luxury hospitality, we bring high standards and attention to detail to every stay, right down to the lighting, linens and local recommendations.
+              </p>
+            </div>
+          </div>
+          <div class="primary-widget">
+            <div>
+              <h5>Engagement</h5>
+              <p>
+                We believe in genuine connection. That means responsive communication, personal touches, and always being available when you need us.
+              </p>
+            </div>
+          </div>
+          <div class="primary-widget">
+            <div>
+              <h5>Excellence</h5>
+              <p>
+                We’re not here to be average. From regular deep cleans to stylish, well-maintained interiors, we keep our spaces at their very best–<strong>always</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="esho-footer">
+        <div class="logo-container flex vertical-center">
           <a href="/">
             <img src="./badge-01.png" alt="Esho Stays logo" width="100" />
           </a>
@@ -201,8 +284,8 @@
             reserved.</span
           >
         </div>
-        <div class="static-links">
-          <ul>
+        <div class="static-links flex vertical-center">
+          <ul class="flex-col">
             <li><a href="/faq/">FAQ</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/partner-with-us">Partner with Us</a></li>
@@ -211,5 +294,21 @@
       </footer>
     </main>
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+    });
+  </script>
   </body>
 </html>

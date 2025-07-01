@@ -8,12 +8,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "peerDependencies": {},
   "devDependencies": {
+    "swiper": "^11.2.10",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.0.15",
-    "tailwindcss": "^4.1.10"
-  }
+  "dependencies": {}
 }

@@ -1,8 +1,34 @@
-@import "tailwindcss";
 :root {
-  --body-grid-row-config: 112px 1fr 112px;
+  --grid-column-config: 1fr 1280px 1fr;
+  --home-grid-row-config: 112px 1fr 112px;
   --about-grid-row-config: 112px 40px 384px 1fr 112px;
   --faq-grid-row-config: 112px 40px 384px 1fr 112px;
+
+  --primary-bg: #28bdbf;
+  --default-body-bg: #f9fafb;
+  --esho-header-text-color: #FFF;
+  --primary-cta: #F15B61;
+  --shadow-color: #262626;
+  --border-color: var(--shadow-color);
+}
+
+body {
+  background-color: var(--default-body-bg);
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  height: 100dvh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -20,13 +46,165 @@ h2 {
   line-height: 1.1;
 }
 
-body {
-  font-family: "Funnel Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+h5 {
+  font-size: 1.2em;
+  line-height: 1.1;
 }
 
+img {
+  object-fit: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: var(--grid-column-config);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  padding: 0 12px;
+}
+
+.grid-container-col {
+  display: grid;
+  grid-template-columns: var(--grid-column-config);
+}
+
+.esho-header {
+  background-color: var(--primary-bg);
+  box-shadow: 0 -5px 16px var(--shadow-color);
+  color: var(--esho-header-text-color);
+  font-size: 0.75rem;
+  grid-row: 1;
+  grid-column: 1/4;
+  z-index: 5;
+}
+
+.esho-header .logo-container {
+  display: flex;
+  width: 50px;
+  align-items: center;
+}
+
+.esho-header-items {
+  display: flex;
+  grid-column: 2/2;
+}
+
+.esho-header .logo-container a{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.header-menu-list {
+  height: 100%;
+  margin: 0;
+  align-items: stretch;
+}
+
+.header-menu-list li {
+  display: flex;
+  align-items: center;
+  padding: 0 0.625rem;
+}
+
+.header-menu-list li.active {
+  border-bottom: 2px solid var(--esho-header-text-color);
+}
+
+.header-right-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-right-section .email, .phone {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.btn-primary {
+  background-color: var(--primary-cta);
+  border: 1px solid var(--esho-header-text-color);
+  border-radius: 0.25rem;
+  color: var(--esho-header-text-color);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+input, select {
+  min-height: 32px;
+}
+
+.primary-widget {
+  border-radius: 20px;
+  background-color: var(--primary-cta);
+  color: var(--esho-header-text-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 200px;
+  height: 250px;
+  transition: transform 300ms ease-out;
+}
+
+.primary-widget:hover {
+  transform: translateY(-50px);
+}
+
+.primary-widget p {
+  font-size: 0.75rem;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.horizontal-center {
+  justify-content: center;
+}
+
+.esho-footer {
+  background-color: var(--primary-bg);
+  color: var(--esho-header-text-color);
+  display: grid;
+  font-size: 0.75rem;
+  grid-template-columns: 300px 1fr;
+  grid-column: 1/4;
+  z-index: 10;
+}
 
 
 /* :root {
