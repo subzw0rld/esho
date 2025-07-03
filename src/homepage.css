@@ -1,25 +1,16 @@
 .home {
-    --grid-row-config: 50px 600px 1fr 800px 600px 600px 550px 112px;
+    --grid-row-config: 96px 800px 1fr 800px 800px 600px 550px 112px;
     --booking-widget-bg: #FFF;
     grid-template-rows: var(--grid-row-config);
 
 }
 
 .homepage-banner {
-    position: relative;
+    background: url('/banner/homepage-hero-desktop.webp') no-repeat;
+    background-size: cover;
     grid-row: 2;
     grid-column: 1/4;
-}
-
-.homepage-banner-picture {
-    grid-column: 1/4;
-    max-height: 600px;
-}
-
-.homepage-banner-image {
-    aspect-ratio: 16/9;
-    width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 .banner-widget {
@@ -31,8 +22,10 @@
     transform: translateY(-50%);
 }
 
-.banner-widget h1 {
+.banner-widget h1, h2 {
+    margin: 0;
     grid-column: 2/2;
+    text-align: center;
 }
 
 .booking-widget {
@@ -40,7 +33,7 @@
     box-shadow: 0px 0px 10px 0px var(--shadow-color);
     background-color: var(--booking-widget-bg);
     width: 900px;
-    padding: 1.25rem;
+    padding: 1.75rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -61,13 +54,17 @@
     min-width: 150px;
 }
 
-.alternate-block {
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     grid-column: 2/2;
 }
 
-.alternate-block h2 {
+.card-block h2 {
     text-align: center;
     padding-top: 4rem;
+    width: 100%;
 }
 
 .homepage-content {
@@ -75,18 +72,8 @@
     grid-column: 1/4;
 }
 
-.homepage-content-slot-even, .homepage-content-slot-odd, .featured-content {
+.featured-content {
     grid-column: 2/2;
-}
-
-.homepage-content-slot-even {
-    align-items: center;
-}
-
-.homepage-content-slot-odd {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 1rem;
 }
 
 .book-now-container {
@@ -121,6 +108,10 @@
     z-index: 2;
 }
 
+.featured-content h2 {
+    text-align: left;
+}
+
 .featured-content img {
     border: 5px solid var(--esho-header-text-color);
 }
@@ -132,11 +123,10 @@
 
 .swiper {
     width: 100%;
-    height: 400px;
 }
 
 .swiper-slide {
-    border: 3px solid #000;
+    display: flex;
     overflow-x: hidden;
 }
 
@@ -159,10 +149,16 @@
     width: 100%;
 }
 
-.three-e h2, h3 {
+.three-e h2, .three-e h3 {
     text-align: center;
 }
 
 .three-e-container {
     gap: 1rem;
+}
+
+.facilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }

@@ -2,6 +2,9 @@
 // // import Swiper styles
 // import 'swiper/css';
 
+import './card/card.css';
+import './fontawesome/css/fontawesome.min.css';
+import './fontawesome/css/solid.min.css';
 import './homepage.css';
 import './style.css';
 

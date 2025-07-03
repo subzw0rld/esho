@@ -11,7 +11,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -75,7 +75,7 @@
         </section>
       </header>
       <section class="homepage-banner grid-container-col">
-        <picture class="homepage-banner-picture">
+        <!-- <picture class="homepage-banner-picture">
           <source
             media="(max-width:1023px)"
             srcset="/banner/homepage-hero-mobile.jpeg"
@@ -83,9 +83,10 @@
           <image
             class="homepage-banner-image"
             src="/banner/homepage-hero-desktop.webp"/>
-        </picture>
+        </picture> -->
         <div class="banner-widget">
-          <h1>Your Stay, Your Place!</h1>
+          <h1>Esho Stays</h1>
+          <h2>Your Stay, Your Place!</h2>
         </div>
         <div class="booking-widget">
           <form class="flex">
@@ -113,56 +114,47 @@
           </form>
         </div>
       </section>
-      <div class="alternate-block">
+      <div class="card-block">
         <h2>Feel at home, wherever you are, with Esho Stays!</h2>
-        <section class="homepage-content grid-container-col">
-          <div class="homepage-content-slot-even flex">
-            <div>
-              <p>
-                At Esho Stays, we believe that where you stay should feel like it was made just for you. 
-                Whether you’re on a work trip, a weekend escape, or spending extended time in a new city, your space should feel warm, welcoming, and completely yours.
-              </p>
-              <!-- <div class="flex book-now-container">
-                <button class="btn-primary">Book Now</button>
-              </div> -->
-            </div>
-            <div>
-              <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="300" height="200">
-            </div>
+        <section class="card">
+          <div class="card-image-container">
+            <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="400" height="267">
+          </div>
+          <div class="card-content-area">
+            At Esho Stays, we believe that where you stay should feel like it was made just for you. 
+            Whether you’re on a work trip, a weekend escape, or spending extended time in a new city, your space should feel warm, welcoming, and completely yours.
           </div>
         </section>
-        <section class="homepage-content grid-container-col">
-          <div class="homepage-content-slot-odd flex">
-            <div>
-              <p>
-                At Esho Stays, we create spaces that go beyond beds and bathrooms. Our short-term accommodations in <strong>Gloucester</strong>, the <strong>Cotswolds</strong>, and the <strong>Midlands</strong>
-                are designed to offer the freedom of a private home with the ease and service of a boutique hotel.
-              </p>
-            </div>
-            <div>
-              <img src="/homepage/IMG_0144.jpg" alt="" srcset="" width="300" height="200">
-            </div>
+        <section class="card">
+          <div class="card-image-container">
+            <img src="/homepage/IMG_0144.jpg" alt="" srcset="" width="400" height="267">
+          </div>
+          <div class="card-content-area">
+            At Esho Stays, we create spaces that go beyond beds and bathrooms. Our short-term accommodations in 
+            <strong>Gloucester</strong>, the <strong>Cotswolds</strong>, and the <strong>Midlands</strong>
+            are designed to offer the freedom of a private home with the ease and service of a boutique hotel.
           </div>
         </section>
-        <section class="homepage-content grid-container-col">
-          <div class="homepage-content-slot-even flex">
-            <div>
-              <p>
-                Whether it’s a peaceful one-bed tucked away in the city, a character-filled townhouse, or a five-bedroom family space with room for everyone (including the dog), you’ll find a stay that fits around you!
-
-              </p>
-            </div>
-            <div>
-              <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="300" height="200">
-            </div>
+        <section class="card">
+          <div class="card-image-container">
+            <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="400" height="267">
+          </div>
+          <div class="card-content-area">
+            Whether it’s a peaceful one-bed tucked away in the city, a character-filled townhouse, or a five-bedroom 
+            family space with room for everyone (including the dog), you’ll find a stay that fits around you!
           </div>
         </section>
       </div>
       <section class="homepage-content grid-container-col feature-section-container">
         <div class="featured-content flex">
-          <h2>We host solo professionals, working teams, relocating families, and leisure travellers–all looking for something more than a typical rental.</h2>
           <div>
-            <img src="/homepage/Renaissance.jpg" alt="" srcset="" width="600" height="400">
+            <h2>One Stop Solution for Every Need!</h2>
+            <p>We host solo professionals, working teams, relocating families, and leisure travellers–all 
+            looking for something more than a typical rental.
+            </p>
+          </div>
+          <div>
+            <img src="/homepage/Renaissance.jpg" alt="" srcset="" width="900" height="600">
           </div>
         </div>
       </section>
@@ -172,41 +164,115 @@
           <div class="carousel swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="/homepage/carousel-slide-1.jpg" alt="" srcset="" width="406" height="271">
-                <div class="carousel-description">
-                  <h3>Property 1</h3>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img src="/homepage/Bedroom 2.1.JPG" alt="" srcset="" width="600" height="400">
+                  </div>
+                  <div class="card-content-area">
+                    <h3>Homely 3 Bed House</h3>
+                    <p><strong>Cirencester</strong></p>
+                    <p class="facilities">
+                      <i class="fa-solid fa-user-group"></i> <span>6 Guests</span>
+                      <i class="fa-solid fa-bed"></i> <span>3 Bedrooms</span>
+                      <i class="fa-solid fa-bath"></i> <span>1.5 Bathrooms</span>
+                      <i class="fa-solid fa-dog"></i> <span>Pet Friendly</span>
+                    </p>
+                    <p>From <strong>£125</strong> per night</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="/homepage/carousel-slide-2.jpg" alt="" srcset="" width="406" height="271">
-                <div class="carousel-description">
-                  <h3>Property 2</h3>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img src="/homepage/Living Room 2.5.JPG" alt="" srcset="" width="600" height="400">
+                  </div>
+                  <div class="card-content-area">
+                    <h3>2 Bed Apartment in 18th Century Building</h3>
+                    <p><strong>Cirencester</strong></p>
+                    <p class="facilities">
+                      <i class="fa-solid fa-user-group"></i> <span>6 Guests</span>
+                      <i class="fa-solid fa-bed"></i> <span>2 Bedrooms</span>
+                      <i class="fa-solid fa-bath"></i> <span>1 Bathroom</span>
+                    </p>
+                    <p>From <strong>£115</strong> per night</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="/homepage/carousel-slide-3.jpg" alt="" srcset="" width="406" height="271">
-                <div class="carousel-description">
-                  <h3>Property 3</h3>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img src="/homepage/20AshcroftRd(11of70).JPG" alt="" srcset="" width="600" height="400">
+                  </div>
+                  <div class="card-content-area">
+                    <h3>Cosy 2 Bed House</h3>
+                    <p><strong>Cirencester</strong></p>
+                    <p class="facilities">
+                      <i class="fa-solid fa-user-group"></i> <span>6 Guests</span>
+                      <i class="fa-solid fa-bed"></i> <span>2 Bedrooms</span>
+                      <i class="fa-solid fa-bath"></i> <span>1 Bathroom</span>
+                    </p>
+                    <p>From <strong>£115</strong> per night</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="/homepage/carousel-slide-1.jpg" alt="" srcset="" width="406" height="271">
-                <div class="carousel-description">
-                  <h3>Property 4</h3>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img src="/homepage/carousel-slide-1.jpg" alt="" srcset="" width="600" height="400">
+                  </div>
+                  <div class="card-content-area">
+                    <h3>2 Bed Apartment in 18th Century Building</h3>
+                    <p><strong>Cirencester</strong></p>
+                    <p class="facilities">
+                      <i class="fa-solid fa-user-group"></i> <span>4 Guests</span>
+                      <i class="fa-solid fa-bed"></i> <span>2 Bedrooms</span>
+                      <i class="fa-solid fa-bath"></i> <span>1 Bathroom</span>
+                    </p>
+                    <p>From <strong>£115</strong> per night</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="/homepage/carousel-slide-2.jpg" alt="" srcset="" width="406" height="271">
-                <div class="carousel-description">
-                  <h3>Property 5</h3>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img src="/homepage/carousel-slide-2.jpg" alt="" srcset="" width="600" height="400">
+                  </div>
+                  <div class="card-content-area">
+                    <h3>Beautiful 5 Bed 3 Bath House</h3>
+                    <p><strong>Cirencester</strong></p>
+                    <p class="facilities">
+                      <i class="fa-solid fa-user-group"></i> <span>10 Guests</span>
+                      <i class="fa-solid fa-bed"></i> <span>5 Bedrooms</span>
+                      <i class="fa-solid fa-bath"></i> <span>3 Bath</span>
+                      <i class="fa-solid fa-dog"></i> <span>Pet Friendly</span>
+                    </p>
+                    <p>From <strong>£325</strong> per night</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="/homepage/carousel-slide-3.jpg" alt="" srcset="" width="406" height="271">
-                <div class="carousel-description">
-                  <h3>Property 6</h3>
+                <div class="card">
+                  <div class="card-image-container">
+                    <img src="/homepage/carousel-slide-3.jpg" alt="" srcset="" width="600" height="400">
+                  </div>
+                  <div class="card-content-area">
+                    <h3>Lovely Little 1 Bed House</h3>
+                    <p><strong>Gloucester</strong></p>
+                    <p class="facilities">
+                      <i class="fa-solid fa-user-group"></i> <span>4 Guests</span>
+                      <i class="fa-solid fa-bed"></i> <span>1 Bed</span>
+                      <i class="fa-solid fa-bath"></i> <span>1 Bath</span>
+                    </p>
+                    <p>From <strong>£85</strong> per night</p>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-circle-chevron-left"></i>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -297,17 +363,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
     var swiper = new Swiper(".swiper", {
+      lazy: true,
       slidesPerView: 3,
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+      spaceBetween: 5,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
     });
   </script>
   </body>

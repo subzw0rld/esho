@@ -1,0 +1,33 @@
+.card {
+    background-color: var(--primary-bg);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+    width: 400px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card-content-area {
+    padding: 1rem;
+}
+
+.card-image-container {
+    overflow: hidden;
+}
+
+.card-image-container img {
+    transition: transform 300ms ease-out;
+}
+
+.card-image-container img:hover {
+    transform: scale(1.5);
+}
+
+.card-content-area h3 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
