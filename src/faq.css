@@ -1,0 +1,15 @@
+.faq {
+    /* --grid-row-config: 120px 800px 1fr 800px 800px 600px 550px 112px; */
+    --grid-row-config: 120px 30px 400px 1fr;
+    grid-template-rows: var(--grid-row-config);
+}
+
+.faq-banner {
+    background-color: var(--primary-color);
+    color: var(--esho-header-text-color);
+    grid-column: 1/4;
+}
+
+.faq-area {
+    grid-column: 2/2;
+}
