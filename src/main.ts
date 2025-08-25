@@ -3,7 +3,9 @@
 // import 'swiper/css';
 
 import './card/card.css';
+import './faq.css';
 import './fontawesome/css/fontawesome.min.css';
+import './fontawesome/css/regular.min.css';
 import './fontawesome/css/solid.min.css';
 import './homepage.css';
 import './style.css';

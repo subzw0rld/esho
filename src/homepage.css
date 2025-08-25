@@ -1,12 +1,16 @@
 .home {
-    --grid-row-config: 96px 800px 1fr 800px 800px 600px 550px 112px;
+    --grid-row-config: 120px 800px 1fr 800px 800px 600px 800px 112px;
     --booking-widget-bg: #FFF;
-    grid-template-rows: var(--grid-row-config);
+    --three-e-widget-background-color: #e6f8f8;
 
+    /* background-color: var(--primary-bg-10); */
+    grid-template-rows: var(--grid-row-config);
+    --default-animation-timing: 500ms;
 }
 
 .homepage-banner {
     background: url('/banner/homepage-hero-desktop.webp') no-repeat;
+    background-position-y: center;
     background-size: cover;
     grid-row: 2;
     grid-column: 1/4;
@@ -14,30 +18,36 @@
 }
 
 .banner-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-column: 2/2;
     color: var(--esho-header-text-color);
     position: absolute;
     /* left: 80px; */
+    text-transform: uppercase;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.banner-widget h1, h2 {
+.banner-widget > h1 {
     margin: 0;
     grid-column: 2/2;
     text-align: center;
+    text-shadow: 2px 2px 1px var(--shadow-color);
 }
 
 .booking-widget {
-    border-radius: 50px;
+    border-radius: 80px;
     box-shadow: 0px 0px 10px 0px var(--shadow-color);
     background-color: var(--booking-widget-bg);
-    width: 900px;
-    padding: 1.75rem;
+    font-size: 1.25rem;
+    width: fit-content;
+    padding: 2.25rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -35px;
+    bottom: -55px;
 }
 
 .booking-widget form {
@@ -52,19 +62,6 @@
 
 .guest-count, .location {
     min-width: 150px;
-}
-
-.card-block {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    grid-column: 2/2;
-}
-
-.card-block h2 {
-    text-align: center;
-    padding-top: 4rem;
-    width: 100%;
 }
 
 .homepage-content {
@@ -109,7 +106,7 @@
 }
 
 .featured-content h2 {
-    text-align: left;
+    text-shadow: 2px 2px 1px var(--shadow-color);
 }
 
 .featured-content img {
@@ -134,6 +131,18 @@
     padding-left: 1rem;
 }
 
+.swiper-slide .card {
+    background-color: var(--primary-bg);
+    border-top-left-radius: var(--featured-border-radius);
+    border-top-right-radius: var(--featured-border-radius);
+    flex-direction: column;
+}
+
+.swiper-slide .card-content-area {
+    font-size: 1.125rem;
+    text-align: center;
+}
+
 .why-book-heading {
     text-align: center;
     width: 100%;
@@ -141,16 +150,70 @@
 
 .three-e {
     display: grid;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 200px 500px;
     grid-column: 2/2;
+    align-items: center;
 }
 
 .three-e div {
     width: 100%;
 }
 
-.three-e h2, .three-e h3 {
-    text-align: center;
+.three-e .primary-widget {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0;
+    height: 500px;
+}
+
+.widget-poster {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover !important;
+    border-radius: inherit;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.widget-poster::before {
+    content: "";
+    background-color: var(--primary-bg-10);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.three-e .primary-widget .text-content {
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.three-e .primary-widget:first-child .widget-poster {
+    background: url('three-e/1.webp') no-repeat;
+}
+
+.three-e .primary-widget:nth-child(2) .widget-poster {
+    background: url('three-e/2.webp') no-repeat;
+}
+
+.three-e .primary-widget:last-child  .widget-poster {
+    background: url('three-e/3.webp') no-repeat;
+}
+
+.three-e .primary-widget::before {
+    content: "e";
+    font-size: 10rem;
+    font-weight: 400;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    z-index: 10;
 }
 
 .three-e-container {
@@ -161,4 +224,35 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+
+.border-animation {
+    position:relative;
+}
+
+.border-animation::before {
+    content: "";
+    border-top: 1px solid var(--body-color);
+    border-bottom: 1px solid var(--body-color);
+    display: flex;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform var(--default-animation-timing) ease-in-out;
+}
+
+.three-e .primary-widget:hover .border-animation::before {
+  transform: scaleX(1);
+}
+
+.three-e .primary-widget:hover .widget-poster::before {
+    content: "";
+    animation: darkenBackground var(--default-animation-timing) forwards;
+}
+
+@keyframes darkenBackground {
+    from {background-color: var(--primary-bg-10);}
+    to {background-color: rgba(40, 189, 191, 0.4)};   
 }

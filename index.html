@@ -23,7 +23,7 @@
         <section class="esho-header-items">
         <div class="logo-container">
           <a href="/">
-            <img src="/badge-01.png" alt="Esho Stays logo" width="100" class="logo-img" />
+            <img src="/badge-01.png" alt="Esho Stays logo" width="120" class="logo-img" />
           </a>
         </div>
         <nav class="grow">
@@ -42,26 +42,14 @@
         <div class="header-right-section">
           <section>
             <a href="mailto:info@eshostays.com" class="email">
-              <img
-                class="rounded-full bg-white p-1"
-                src="./icons/envelope.svg"
-                alt="email icon"
-                width="20"
-                height="20"
-              />
+              <i class="fa-regular fa-envelope"></i>
               <span>info@eshostays.com</span>
             </a>
           </section>
 
           <section>
             <a href="tel:01452903703" class="phone">
-              <img
-                class="rounded-full bg-white p-1"
-                src="./icons/phone.svg"
-                alt="email icon"
-                width="20"
-                height="20"
-              />
+              <i class="fa-solid fa-phone"></i>
               <span class="ml-2">01452 903703</span>
             </a>
           </section>
@@ -85,8 +73,9 @@
             src="/banner/homepage-hero-desktop.webp"/>
         </picture> -->
         <div class="banner-widget">
-          <h1>Esho Stays</h1>
-          <h2>Your Stay, Your Place!</h2>
+          <!-- <h1>Esho Stays</h1> -->
+           <img src="/main-logo.webp" alt="Esho Banner Logo" width="300">
+          <h1>Your Stay, Your Place!</h1>
         </div>
         <div class="booking-widget">
           <form class="flex">
@@ -96,7 +85,7 @@
               <label for="checkOutDate">Check-Out</label>
               <input type="date" name="checkOutDate">
             </div>
-            <div>
+            <div class="flex vertical-center">
               <select name="guestCount" class="guest-count">
                 <option value="Guests">Guests</option>
                 <option value="1">1</option>
@@ -118,16 +107,19 @@
         <h2>Feel at home, wherever you are, with Esho Stays!</h2>
         <section class="card">
           <div class="card-image-container">
-            <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="400" height="267">
+            <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="600" height="400">
+          </div>
+          <div class="card-semi-circle">
+            <img src="/homepage/35RW.webp" alt="" srcset="" width="264" height="400">
           </div>
           <div class="card-content-area">
             At Esho Stays, we believe that where you stay should feel like it was made just for you. 
             Whether you’re on a work trip, a weekend escape, or spending extended time in a new city, your space should feel warm, welcoming, and completely yours.
           </div>
         </section>
-        <section class="card">
-          <div class="card-image-container">
-            <img src="/homepage/IMG_0144.jpg" alt="" srcset="" width="400" height="267">
+        <section class="card flex-reverse">
+          <div class="card-image-container card-top-left-radius">
+            <img src="/homepage/IMG_0144.jpg" alt="" srcset="" width="600" height="400">
           </div>
           <div class="card-content-area">
             At Esho Stays, we create spaces that go beyond beds and bathrooms. Our short-term accommodations in 
@@ -136,8 +128,8 @@
           </div>
         </section>
         <section class="card">
-          <div class="card-image-container">
-            <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="400" height="267">
+          <div class="card-image-container card-top-right-radius">
+            <img src="/homepage/IMG_0179.jpg" alt="" srcset="" width="600" height="400">
           </div>
           <div class="card-content-area">
             Whether it’s a peaceful one-bed tucked away in the city, a character-filled townhouse, or a five-bedroom 
@@ -149,7 +141,7 @@
         <div class="featured-content flex">
           <div>
             <h2>One Stop Solution for Every Need!</h2>
-            <p>We host solo professionals, working teams, relocating families, and leisure travellers–all 
+            <p class="large-text">We host solo professionals, working teams, relocating families, and leisure travellers–all 
             looking for something more than a typical rental.
             </p>
           </div>
@@ -175,7 +167,7 @@
                       <i class="fa-solid fa-user-group"></i> <span>6 Guests</span>
                       <i class="fa-solid fa-bed"></i> <span>3 Bedrooms</span>
                       <i class="fa-solid fa-bath"></i> <span>1.5 Bathrooms</span>
-                      <i class="fa-solid fa-dog"></i> <span>Pet Friendly</span>
+                      <!-- <i class="fa-solid fa-dog"></i> <span>Pet Friendly</span> -->
                     </p>
                     <p>From <strong>£125</strong> per night</p>
                   </div>
@@ -285,7 +277,7 @@
           <div class="primary-widget">
             <div>
               <h5>Hotel Standards, Homely Feel</h5>
-              <p>
+              <p class="large-text">
                 Expect crisp linens, sparkling clean spaces, and interiors that are as functional as they are beautiful. Everything’s ready for your arrival… You just bring yourself!
               </p>
             </div>
@@ -293,7 +285,7 @@
           <div class="primary-widget">
             <div>
               <h5>Simple, Direct Bookings</h5>
-              <p>
+              <p class="large-text">
                 No portals and no surprises. Book directly with us and enjoy fair pricing, clear communication, and real people at the other end of your message.
               </p>
             </div>
@@ -301,7 +293,7 @@
           <div class="primary-widget">
             <div>
               <h5>Great Locations</h5>
-              <p>
+              <p class="large-text">
                 From charming Cotswold market towns to vibrant city streets in Gloucester and Coventry, our homes are perfectly placed for convenience and character.
               </p>
             </div>
@@ -310,32 +302,32 @@
       </section>
       <section class="three-e">
         <div>
-          <h2>The three E’s</h2>
-          <h3>3 principles we stand for</h3>
+          <h2>The Three E’s of Esho</h2>
+          <!-- <h3>3 principles we stand for</h3> -->
         </div>
         <div class="three-e-container flex horizontal-center">
           <div class="primary-widget">
-            <div>
-              <h5>Experience</h5>
-              <p>
-                With over 20 years in luxury hospitality, we bring high standards and attention to detail to every stay, right down to the lighting, linens and local recommendations.
-              </p>
+            <div class="widget-poster">
+              <h5 class="border-animation">Experience</h5>
+            </div>
+            <div class="text-content">
+              With over 20 years in luxury hospitality, we bring high standards and attention to detail to every stay, right down to the lighting, linens and local recommendations.
             </div>
           </div>
           <div class="primary-widget">
-            <div>
-              <h5>Engagement</h5>
-              <p>
-                We believe in genuine connection. That means responsive communication, personal touches, and always being available when you need us.
-              </p>
+            <div class="widget-poster">
+              <h5 class="border-animation">Engagement</h5>
+            </div>
+            <div class="text-content">
+              We believe in genuine connection. That means responsive communication, personal touches, and always being available when you need us.
             </div>
           </div>
           <div class="primary-widget">
-            <div>
-              <h5>Excellence</h5>
-              <p>
-                We’re not here to be average. From regular deep cleans to stylish, well-maintained interiors, we keep our spaces at their very best–<strong>always</strong>.
-              </p>
+            <div class="widget-poster">
+              <h5 class="border-animation">Excellence</h5>
+            </div>
+            <div class="text-content">
+              We’re not here to be average. From regular deep cleans to stylish, well-maintained interiors, we keep our spaces at their very best–<strong>always</strong>.
             </div>
           </div>
         </div>
@@ -343,9 +335,9 @@
       <footer class="esho-footer">
         <div class="logo-container flex vertical-center">
           <a href="/">
-            <img src="./badge-01.png" alt="Esho Stays logo" width="100" />
+            <img src="/badge-01.png" alt="Esho Stays logo" width="100" />
           </a>
-          <span class="ml-3.5"
+          <span class="copyright-text"
             >&copy; <span class="date-container"></span> EshoStays- All rights
             reserved.</span
           >
