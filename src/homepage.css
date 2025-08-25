@@ -194,15 +194,15 @@
 }
 
 .three-e .primary-widget:first-child .widget-poster {
-    background: url('three-e/1.webp') no-repeat;
+    background: url('/three-e/1.webp') no-repeat;
 }
 
 .three-e .primary-widget:nth-child(2) .widget-poster {
-    background: url('three-e/2.webp') no-repeat;
+    background: url('/three-e/2.webp') no-repeat;
 }
 
 .three-e .primary-widget:last-child  .widget-poster {
-    background: url('three-e/3.webp') no-repeat;
+    background: url('/three-e/3.webp') no-repeat;
 }
 
 .three-e .primary-widget::before {
