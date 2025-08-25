@@ -69,10 +69,17 @@ main {
   grid-template-columns: var(--grid-column-config);
 }
 
+summary {
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 ul {
   display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -91,6 +98,7 @@ ul {
   display: flex;
   align-items: center;
   grid-column: 1/4;
+  padding-left: 2rem;
 }
 
 .esho-header {
@@ -264,4 +272,8 @@ input, select {
 
 .flex-reverse {
   flex-direction: row-reverse;
+}
+
+.ml-1 {
+  margin-left: 1rem;
 }
