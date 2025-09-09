@@ -34,7 +34,7 @@
     margin: 0;
     grid-column: 2/2;
     text-align: center;
-    text-shadow: 2px 2px 1px var(--shadow-color);
+    /* text-shadow: 2px 2px 1px var(--shadow-color); */
 }
 
 .booking-widget {
@@ -61,6 +61,8 @@
 }
 
 .guest-count, .location {
+    display: flex;
+    column-gap: 0.325rem;
     min-width: 150px;
 }
 
