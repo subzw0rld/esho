@@ -111,6 +111,13 @@
     z-index: 1;
 }
 
+.feature-section-container-2 .primary-widget {
+  background-color: #D7C7C2;  
+  border: 2px solid #CCB8B0;
+  box-shadow: 0 0 10px 0 var(--shadow-color);
+  color: #4f5054;
+}
+
 .featured-content {
     align-items: center;
     gap: 1rem;
@@ -144,7 +151,7 @@
 }
 
 .swiper-slide .card {
-    background-color: var(--primary-bg);
+    background-color: var(--teal-75);
     border-top-left-radius: var(--featured-border-radius);
     border-top-right-radius: var(--featured-border-radius);
     flex-direction: column;

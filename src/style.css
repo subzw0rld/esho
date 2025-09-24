@@ -3,10 +3,13 @@
   --home-grid-row-config: 112px 1fr 112px;
   --about-grid-row-config: 112px 40px 384px 1fr 112px;
   --faq-grid-row-config: 112px 40px 384px 1fr 112px;
-
+  --teal: rgb(40, 187, 189);
+  --teal-80: rgba(40, 187, 189, 0.8);
+  --teal-75: rgba(40, 187, 189, 0.75);
+  --teal-60: rgba(40, 187, 189, 0.6);
   --body-color: #4f5054;
   --primary-color: #262626;
-  --primary-bg: #28bdbf;
+  --primary-bg: var(--teal);
   --primary-bg-10: rgba(40, 189, 191, 0.1);
   --default-body-bg: var(--primary-bg-10);
   --esho-header-text-color: #FFF;
